@@ -1,3 +1,240 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#143d32"><meta name="description" content="ALC English Challenge — a learning space for Children, Juniors, and Adults at the American Language Center."><title>ALC English Challenge</title><link rel="stylesheet" href="assets/style.css"></head>
-<body><a class="skip" href="#main">Skip to content</a><header><a href="#/" class="brand"><span class="brand-mark">a<span>lc</span><i>✦</i></span><span>ENGLISH CHALLENGE<small>AMERICAN LANGUAGE CENTER</small></span></a><nav aria-label="Main navigation"><a href="#/">Learning spaces</a><a href="#/progress">My progress</a><button id="teacher-toggle" class="teacher-button">⚙ <span>Teacher workspace</span></button></nav></header><div id="teacher" hidden></div><main id="main" tabindex="-1"></main><footer><a href="#/" class="footer-brand">ALC English Challenge <span>Learn a little. Grow a lot.</span></a><span>Your own pace. Your next possibility.</span><small>Independent learning companion · American Language Center</small></footer><script type="module" src="assets/app.js"></script></body></html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#143d32"><meta name="description" content="ALC English Challenge — a learning space for Children, Juniors, and Adults at the American Language Center."><title>ALC English Challenge</title><style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#183d34;--muted:#67766e;--paper:#fbfaf6;--line:#e2e5dc;--accent:#174c3e}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px 'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a,input,select,summary{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default;opacity:.65}button,a,label,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #dd8c37;outline-offset:4px}header{height:110px;max-width:1344px;margin:auto;padding:0 52px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:24px}.brand{display:flex;gap:15px;align-items:center;font-size:11px;font-weight:800;letter-spacing:1.5px}.brand small{display:block;font-size:8px;letter-spacing:1.7px;margin-top:6px;color:var(--muted)}.brand-mark{position:relative;font-size:42px;letter-spacing:-6px;font-weight:800;line-height:1;padding-right:12px}.brand-mark span{color:#417859}.brand-mark i{font-size:15px;color:#d79645;position:absolute;right:-2px;top:-4px;letter-spacing:0}header nav{display:flex;align-items:center;gap:30px;font-size:13px}header nav>a:hover{text-decoration:underline}.teacher-button{border:1px solid #d6dcd0;background:transparent;padding:11px 16px;border-radius:7px;color:var(--ink);font-size:12px}main{max-width:1240px;margin:auto;padding:0 0 60px;min-height:65vh}h1,h2,h3{font-family:'Manrope',sans-serif}h1{font-size:48px;line-height:1.15;letter-spacing:-2px}h2{font-size:30px;letter-spacing:-1px}h3{font-size:20px}.eyebrow{font-size:10px;letter-spacing:1.8px;font-weight:700;text-transform:uppercase}.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:35px;padding:74px 0 65px;align-items:center}.hero .eyebrow{display:flex;align-items:center;gap:9px}.eyebrow i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#4c845c}.hero h1{font-size:60px;line-height:1.13;letter-spacing:-2.8px;margin:25px 0 20px;font-weight:600}.hero h1 em{font-family:Georgia,serif;font-weight:400;color:#5b8058}.hero p{color:var(--muted);font-size:16px;line-height:1.85}.primary{display:inline-flex;justify-content:center;align-items:center;gap:32px;padding:15px 23px;background:var(--accent);color:white;border:0;border-radius:6px;font-weight:600;font-size:13px;min-height:46px}.hero .primary{margin-top:18px}.primary:hover{background:#27664f}.primary span{font-size:20px}.hero-note{margin-top:25px;font-size:11px;color:var(--muted)}.hero-note span{color:#bc8a39;margin-right:8px}.hero-art{height:385px;position:relative;isolation:isolate}.art-orbit{position:absolute;width:325px;height:325px;border-radius:50%;background:#eff0df;left:70px;top:24px}.art-grid{position:absolute;inset:0;background-image:radial-gradient(#b7c3ac 1px,transparent 1px);background-size:19px 19px;opacity:.42;clip-path:circle(45% at 51% 50%)}.speech{position:absolute;box-shadow:0 15px 25px #1e483513;transform:rotate(-9deg);border-radius:25px}.speech-one{background:#316448;color:#fff9dc;width:216px;height:166px;top:42px;left:72px;font-family:Georgia,serif;font-size:46px;padding:24px 29px;line-height:1}.speech-one span{display:block;font-style:italic}.speech-one:after{content:'';position:absolute;bottom:-23px;left:34px;border-width:25px 28px 0 0;border-style:solid;border-color:#316448 transparent transparent transparent}.speech-one i{position:absolute;font-size:39px;right:18px;top:24px;color:#dfb25c}.speech-two{background:#e6b866;width:140px;height:140px;top:157px;right:34px;transform:rotate(10deg);font-family:Georgia,serif;font-size:74px;padding:21px 18px;color:#3c4d30}.speech-two span{font-size:59px}.speech-two:after{content:'';position:absolute;bottom:-17px;right:21px;border:20px solid transparent;border-top-color:#e6b866;border-bottom:0;border-left:0}.art-star{position:absolute;right:51px;top:20px;font-size:59px;color:#d59744}.art-label{position:absolute;left:54px;bottom:20px;transform:rotate(-6deg);font-size:9px;letter-spacing:2px}.art-book{position:absolute;display:flex;left:91px;bottom:65px;transform:rotate(9deg);filter:drop-shadow(0 9px 0 #c4cdb5)}.art-book div{width:86px;height:69px;background:#fffdf2;border:1px solid #d6ddcd;transform:skewY(10deg);border-radius:7px 0 0 6px;background-image:repeating-linear-gradient(0deg,transparent 0 13px,#e4e8da 14px,transparent 15px);background-size:70% 70%;background-repeat:no-repeat;background-position:center}.art-book div+div{transform:skewY(-10deg);border-radius:0 7px 6px 0}.art-spark{position:absolute;left:12px;top:206px;font-size:50px;color:#8b9c67}.art-dot{position:absolute;width:11px;height:11px;background:#6a845a;border-radius:50%;right:70px;bottom:45px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}.section-heading h2{margin:10px 0 0}.section-heading>p{font-size:12px;color:var(--muted);margin-bottom:7px}.space-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.space-card{padding:28px;border:1px solid #e5e4d5;border-radius:12px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.space-card:hover{transform:translateY(-5px);box-shadow:0 12px 28px #213e3210}.children{background:#f5efd9}.juniors{background:#e9eee4}.adults{background:#e9ecf2;color:#303f58}.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:34px}.space-icon{height:50px;width:50px;display:grid;place-items:center;border-radius:14px;background:#efe0b4;color:#96712a;font-size:32px}.juniors .space-icon{background:#d5e2cf;color:#477346}.adults .space-icon{background:#d7deeb;color:#576c93}.card-number{font-size:11px;opacity:.45}.space-card .eyebrow{font-size:9px;letter-spacing:1.1px}.space-card h3{font-size:31px;font-weight:600;letter-spacing:-1px;margin:10px 0 9px}.space-card p{font-size:13px;line-height:1.8;color:#657064;margin:0;max-width:290px}.adults p{color:#657084}.card-bottom{border-top:1px solid #27483116;display:flex;justify-content:space-between;align-items:center;margin-top:28px;padding-top:18px;font-size:11px}.round-arrow{width:31px;height:31px;border-radius:50%;border:1px solid #27483135;display:grid;place-items:center;font-size:19px}.path-strip{display:flex;align-items:center;gap:23px;border:1px solid var(--line);border-radius:10px;padding:25px 28px;margin-top:35px}.strip-icon{font-size:39px;color:#80936b}.path-strip h3{font-size:16px;margin:0 0 7px}.path-strip p{font-size:12px;color:var(--muted);margin:0}.path-steps{margin-left:auto;display:flex;align-items:center;gap:18px;font-size:12px}.path-steps i{color:#97a28c}.content-note{display:flex;gap:10px;align-items:center;justify-content:center;color:var(--muted);font-size:11px;margin:24px 0 0}.content-note>span{font-size:18px}footer{border-top:1px solid var(--line);max-width:1344px;margin:auto;padding:28px 52px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:11px;color:var(--muted)}.footer-brand{color:var(--ink);font-weight:700;font-size:12px}.footer-brand span{display:block;font-size:10px;font-weight:400;margin-top:5px}footer small{font-size:9px}.crumbs{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;padding-top:30px;color:var(--muted)}.crumbs a:hover{text-decoration:underline}.crumbs b{font-weight:400;opacity:.5}.page-intro{padding:48px 0 30px}.page-intro h1{margin:14px 0}.page-intro p{color:var(--muted);line-height:1.8}.level-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.level-card{display:block;padding:25px;border:1px solid var(--line);border-radius:10px;background:white}.level-card:hover{border-color:#6b8c6b}.level-card h3{display:flex;justify-content:space-between;margin:12px 0}.level-card p{font-size:13px;color:var(--muted)}.level-card .eyebrow{font-size:9px}.level-groups section{margin-bottom:35px}.level-groups h2{font-size:21px}.empty{padding:55px 24px;text-align:center;background:#f1f3eb;border:1px dashed #c8d2be;border-radius:12px}.empty-icon{font-size:35px;color:#6f8860}.empty p{font-size:14px;color:var(--muted);line-height:1.8}.status{display:inline-block;border-radius:20px;padding:8px 14px;background:#e4e9dc;color:#587049;font-size:11px}.practice-title{font-size:21px;margin-top:40px}.practice-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.practice-grid>div{border:1px solid var(--line);padding:20px;border-radius:8px}.practice-grid span{color:#839376;font-size:11px}.practice-grid h3{font-size:14px}.practice-grid small{font-size:11px;color:var(--muted)}body[data-space=children]{--accent:#856018}body[data-space=children] .level-card{background:#faf3df;border-radius:18px}body[data-space=juniors]{--accent:#416847}body[data-space=adults]{--accent:#344d70}body[data-space=adults] .level-card{background:#f0f3f8}.quiz-category{margin:24px 0;border-top:1px solid var(--line);padding-top:10px}.quiz-category h2{font-size:21px}.muted{color:var(--muted);font-size:13px}.quiz-link{display:flex;justify-content:space-between;align-items:center;background:white;border:1px solid var(--line);padding:20px;border-radius:8px;margin-bottom:10px}.quiz-link small{display:block;color:var(--muted);margin-top:7px}.quiz-panel{max-width:720px;margin:45px auto;background:white;border:1px solid var(--line);border-radius:16px;padding:35px}.quiz-panel h1{font-size:30px;letter-spacing:-1px}.quiz-panel h2{font-size:23px;letter-spacing:-.5px;line-height:1.5}.question-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}progress{width:100%;height:10px;accent-color:var(--accent);margin:15px 0}fieldset{border:0;padding:0;margin:20px 0}.option{display:flex;align-items:center;gap:14px;padding:16px;border:1px solid var(--line);border-radius:8px;margin-bottom:10px;cursor:pointer}.option:has(input:checked){border-color:var(--accent);background:#f1f5ed}.option input{accent-color:var(--accent)}.text-label{display:flex;flex-direction:column;gap:8px;margin:15px 0;font-size:13px}input:not([type=radio]),select{padding:11px;border:1px solid #c5cdbf;border-radius:5px;background:white;color:var(--ink);min-width:0}.feedback{margin:22px 0;padding:18px;border-radius:8px;line-height:1.7}.feedback h3{margin:0}.feedback p{margin-bottom:0}.correct{background:#e9f2e4}.incorrect{background:#fff0d9}.results{text-align:center;max-width:740px;margin:50px auto}.result-score{font:800 90px 'Manrope',sans-serif;margin:15px}.result-score small{font-size:30px}.results h1{font-size:37px}.results h2{font-size:23px;margin-top:40px}.answer-review{text-align:left;padding:20px;border-top:1px solid var(--line);line-height:1.6}.answer-review p{color:var(--muted)}.secondary{display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:10px 16px;border:1px solid #c6cfbf;background:white;border-radius:5px;color:var(--ink);font-size:13px;cursor:pointer}.teacher-head{display:flex;justify-content:space-between;gap:15px;align-items:center}.teacher-head h2{margin:9px 0}#teacher{max-width:1240px;margin:20px auto;padding:28px;background:#eef1e7;border:1px solid #c7d2bd;border-radius:10px}#teacher>p,.builder p{font-size:13px;line-height:1.8;max-width:950px}.editor-actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.import-label input{display:none}.builder{margin:15px 0;padding:16px;background:#fafbf7;border:1px solid var(--line);border-radius:6px}summary{cursor:pointer;font-weight:600;font-size:13px}.builder-fields{display:flex;flex-wrap:wrap;align-items:end;gap:12px;margin-top:15px}.builder-fields label{display:flex;flex-direction:column;gap:6px;font-size:12px;flex:1}.builder-fields label input,.builder-fields select{width:100%}textarea{width:100%;resize:vertical;border:1px solid #bec9b4;border-radius:5px;padding:15px;font:12px/1.6 monospace;tab-size:2}.error{color:#a03024}.success{color:#315d29}.skip{position:fixed;left:10px;top:-100px;z-index:100;background:white;padding:15px}.skip:focus{top:10px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}[hidden]{display:none!important}
+@media(min-width:1450px){header,footer{max-width:1440px}main,#teacher{max-width:1280px}.hero{padding-top:85px;padding-bottom:75px}}@media(max-width:1350px){main{margin:0 52px}#teacher{margin:20px 52px}.hero h1{font-size:53px}}@media(max-width:1000px){header{padding:0 28px}main{margin:0 28px}.hero h1{font-size:43px}.hero-art{transform:scale(.85);transform-origin:center}.hero{gap:0}.space-card{padding:23px}.path-steps{display:none}.practice-grid{grid-template-columns:repeat(3,1fr)}footer{padding:25px 28px}footer>span{display:none}.section-heading{align-items:start;flex-direction:column;gap:5px}#teacher{margin:20px 28px}}@media(max-width:700px){header{height:auto;min-height:105px;padding:18px 20px;flex-wrap:wrap;gap:20px}.brand-mark{font-size:35px}.brand{font-size:10px}.brand small{font-size:7px}header nav{gap:20px;width:100%;justify-content:space-between;font-size:11px}.teacher-button{padding:8px 10px;font-size:10px}main{margin:0 20px}.hero{display:flex;flex-direction:column;align-items:stretch;padding:42px 0 25px;gap:12px}.hero h1{font-size:43px;letter-spacing:-2px}.hero .eyebrow{font-size:8px;letter-spacing:1.4px}.hero p{font-size:14px}.hero-art{height:290px;width:350px;max-width:100%;align-self:center;transform:scale(.8);margin:-25px 0 -20px;transform-origin:center}.art-orbit{left:20px}.speech-one{left:20px}.speech-two{right:-5px}.art-star{right:0}.art-book{left:45px;bottom:15px}.art-label{left:20px;bottom:-25px}.art-spark{left:-15px}.art-dot{bottom:10px;right:5px}.section-heading h2{font-size:27px}.section-heading .eyebrow{font-size:8px}.space-grid,.level-grid{grid-template-columns:1fr}.space-card{padding:25px}.card-top{margin-bottom:22px}.space-card p{max-width:none}.path-strip{padding:20px;gap:15px;align-items:start}.path-strip h3{font-size:14px}.path-strip p{line-height:1.8}.content-note{align-items:start;line-height:1.8;padding:0 7px}.content-note p{margin:0}footer{padding:25px 20px;align-items:start;flex-direction:column}.practice-grid{grid-template-columns:repeat(2,1fr)}.page-intro{padding-top:35px}.page-intro h1{font-size:37px}.quiz-panel{padding:23px 18px;margin-top:25px}.quiz-panel h1{font-size:25px}.quiz-panel h2{font-size:20px}.results h1{font-size:30px}.results .secondary{margin-top:10px}#teacher{margin:15px 12px;padding:18px}.teacher-head h2{font-size:22px}.builder-fields{flex-direction:column;align-items:stretch}.teacher-head .secondary{font-size:11px}.editor-actions>*{flex:1;white-space:nowrap}.crumbs{font-size:11px;gap:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a href="#/" class="brand"><span class="brand-mark">a<span>lc</span><i>✦</i></span><span>ENGLISH CHALLENGE<small>AMERICAN LANGUAGE CENTER</small></span></a><nav aria-label="Main navigation"><a href="#/">Learning spaces</a><a href="#/progress">My progress</a><button id="teacher-toggle" class="teacher-button">⚙ <span>Teacher workspace</span></button></nav></header><div id="teacher" hidden></div><main id="main" tabindex="-1"></main><footer><a href="#/" class="footer-brand">ALC English Challenge <span>Learn a little. Grow a lot.</span></a><span>Your own pace. Your next possibility.</span><small>Independent learning companion · American Language Center</small></footer><script type="application/json" id="published-bank">{
+  "version": 1,
+  "sections": [
+    {
+      "id": "children",
+      "title": "Children",
+      "tagline": "Small steps. Big discoveries.",
+      "description": "A playful space to explore English, build confidence, and enjoy every new discovery.",
+      "levels": [
+        {
+          "id": "children-1",
+          "title": "Children 1",
+          "units": []
+        },
+        {
+          "id": "children-2",
+          "title": "Children 2",
+          "units": []
+        },
+        {
+          "id": "children-4",
+          "title": "Children 4",
+          "units": []
+        },
+        {
+          "id": "children-5",
+          "title": "Children 5",
+          "units": []
+        },
+        {
+          "id": "children-6",
+          "title": "Children 6",
+          "units": []
+        }
+      ]
+    },
+    {
+      "id": "juniors",
+      "title": "Juniors",
+      "tagline": "Find your voice.",
+      "description": "Follow your curiosity, sharpen your skills, and take on your next English challenge.",
+      "levels": [
+        {
+          "id": "juniors-1",
+          "title": "Juniors 1",
+          "units": []
+        },
+        {
+          "id": "juniors-2",
+          "title": "Juniors 2",
+          "units": []
+        },
+        {
+          "id": "juniors-3",
+          "title": "Juniors 3",
+          "units": []
+        },
+        {
+          "id": "juniors-4",
+          "title": "Juniors 4",
+          "units": []
+        },
+        {
+          "id": "juniors-5",
+          "title": "Juniors 5",
+          "units": []
+        },
+        {
+          "id": "juniors-6",
+          "title": "Juniors 6",
+          "units": []
+        },
+        {
+          "id": "ya",
+          "title": "YA",
+          "units": []
+        }
+      ]
+    },
+    {
+      "id": "adults",
+      "title": "Adults",
+      "tagline": "English for your next chapter.",
+      "description": "Build practical skills and move forward with a clear, purposeful learning journey.",
+      "levels": [
+        {
+          "id": "beginning-1",
+          "title": "Beginning 1",
+          "group": "Beginning",
+          "units": []
+        },
+        {
+          "id": "beginning-2",
+          "title": "Beginning 2",
+          "group": "Beginning",
+          "units": []
+        },
+        {
+          "id": "beginning-3",
+          "title": "Beginning 3",
+          "group": "Beginning",
+          "units": []
+        },
+        {
+          "id": "beginning-4",
+          "title": "Beginning 4",
+          "group": "Beginning",
+          "units": []
+        },
+        {
+          "id": "beginning-5",
+          "title": "Beginning 5",
+          "group": "Beginning",
+          "units": []
+        },
+        {
+          "id": "beginning-6",
+          "title": "Beginning 6",
+          "group": "Beginning",
+          "units": []
+        },
+        {
+          "id": "intermediate-1",
+          "title": "Intermediate 1",
+          "group": "Intermediate",
+          "units": []
+        },
+        {
+          "id": "intermediate-2",
+          "title": "Intermediate 2",
+          "group": "Intermediate",
+          "units": []
+        },
+        {
+          "id": "intermediate-3",
+          "title": "Intermediate 3",
+          "group": "Intermediate",
+          "units": []
+        },
+        {
+          "id": "intermediate-4",
+          "title": "Intermediate 4",
+          "group": "Intermediate",
+          "units": []
+        },
+        {
+          "id": "intermediate-5",
+          "title": "Intermediate 5",
+          "group": "Intermediate",
+          "units": []
+        },
+        {
+          "id": "intermediate-6",
+          "title": "Intermediate 6",
+          "group": "Intermediate",
+          "units": []
+        },
+        {
+          "id": "advanced-1",
+          "title": "Advanced 1",
+          "group": "Advanced",
+          "units": []
+        },
+        {
+          "id": "advanced-2",
+          "title": "Advanced 2",
+          "group": "Advanced",
+          "units": []
+        },
+        {
+          "id": "advanced-3",
+          "title": "Advanced 3",
+          "group": "Advanced",
+          "units": []
+        },
+        {
+          "id": "advanced-4",
+          "title": "Advanced 4",
+          "group": "Advanced",
+          "units": []
+        },
+        {
+          "id": "advanced-5",
+          "title": "Advanced 5",
+          "group": "Advanced",
+          "units": []
+        },
+        {
+          "id": "advanced-6",
+          "title": "Advanced 6",
+          "group": "Advanced",
+          "units": []
+        }
+      ]
+    }
+  ]
+}
+</script><script type="module">const categories = { vocabulary: 'Vocabulary', grammar: 'Grammar', review: 'Lesson reviews', challenge: 'Unit challenges', remedial: 'Remedial practice' };
+function validate(bank) {
+ const fail = message => { throw new Error(message); };
+ if (bank?.version !== 1 || !Array.isArray(bank.sections)) fail('Expected content version 1 and sections array.');
+ const ids = new Set(); const id = x => { if (!x || typeof x.id !== 'string' || !/^[a-z0-9-]+$/.test(x.id) || ids.has(x.id)) fail('IDs must be unique lowercase letters, numbers and hyphens.'); ids.add(x.id); if(typeof x.title !== 'string' || !x.title.trim()) fail('Every item needs a title.'); };
+ const array = (x,key) => {if (!Array.isArray(x[key])) fail(`Missing ${key} array.`); return x[key];};
+ const expected = {children:[1,2,4,5,6].map(n=>`children-${n}`),juniors:[1,2,3,4,5,6].map(n=>`juniors-${n}`).concat('ya'),adults:['beginning','intermediate','advanced'].flatMap(g=>[1,2,3,4,5,6].map(n=>`${g}-${n}`))};
+ if(bank.sections.length!==3) fail('Keep the three required sections.');
+ for(const s of bank.sections){id(s);if(!expected[s.id]) fail('Unknown section.');const levels=array(s,'levels');if(JSON.stringify(levels.map(l=>l.id).sort())!==JSON.stringify([...expected[s.id]].sort())) fail('Keep the required levels.');for(const l of levels){id(l);for(const u of array(l,'units')){id(u);for(const lesson of array(u,'lessons')){id(lesson);for(const q of array(lesson,'quizzes')){id(q);if(!categories[q.category]) fail('Choose a valid quiz category.');if(!array(q,'questions').length) fail('A quiz needs at least one question.');for(const item of q.questions){id(item);if(typeof item.prompt!=='string'||!item.prompt.trim()||typeof item.explanation!=='string'||!item.explanation.trim()) fail('Questions need a prompt and explanation.');if(item.type==='choice'){if(!Array.isArray(item.options)||item.options.length<2||!item.options.every(o=>typeof o==='string'&&o.trim())||!Number.isInteger(item.answer)||item.answer<0||item.answer>=item.options.length) fail('Choice questions need options and a valid zero-based answer index.');}else if(item.type==='text'){if(!Array.isArray(item.answers)||!item.answers.length||!item.answers.every(a=>typeof a==='string'&&a.trim())) fail('Text questions need accepted answers.');}else fail('Supported types: choice and text.');}}}}}}
+ return bank;
+}
+function isCorrect(q, answer){return q.type==='choice' ? q.answer===answer : q.answers.some(a=>a.trim().toLocaleLowerCase()===String(answer).trim().toLocaleLowerCase());}
+function score(answers){return answers.length?Math.round(answers.filter(Boolean).length/answers.length*100):0;}
+
+const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const key='alc-english-challenge:v1:', read=(k,f)=>{try{return JSON.parse(localStorage.getItem(key+k))??f;}catch{return f;}}, save=(k,v)=>{try{localStorage.setItem(key+k,JSON.stringify(v));return true;}catch{alert('Browser storage is unavailable. Export your content to keep it.');return false;}};
+let bank, published, run=null, progress=read('progress',{});const main=$('#main');
+const href=(...parts)=>'#/'+parts.map(encodeURIComponent).join('/');
+const link=(url,label,cls='')=>`<a class="${cls}" href="${url}">${esc(label)}</a>`;
+const icons={children:'✦',juniors:'↗',adults:'◈'};
+function crumbs(items){return `<nav class="crumbs" aria-label="Breadcrumb">${[link('#/','Home'),...items.map(([label,url])=>url?link(url,label):`<span aria-current="page">${esc(label)}</span>`)].join('<b>/</b>')}</nav>`;}
+function empty(title,body){return `<div class="empty"><span class="empty-icon">▤</span><h3>${esc(title)}</h3><p>${esc(body)}</p><span class="status">Curriculum coming soon</span></div>`;}
+function intro(kicker,title,desc){return `<div class="page-intro"><span class="eyebrow">${esc(kicker)}</span><h1>${esc(title)}</h1><p>${esc(desc)}</p></div>`;}
+function home(){main.innerHTML=`<section class="hero"><div class="hero-copy"><span class="eyebrow"><i></i> YOUR ENGLISH JOURNEY STARTS HERE</span><h1>A little practice.<br>A world of <em>possibility.</em></h1><p>A space to explore, practice, and grow.<br>Choose your learning space and make English your own.</p><a class="primary" href="#spaces">Find your learning space <span>↗</span></a><div class="hero-note"><span>✦</span> Every learner has a place here.</div></div><div class="hero-art" aria-hidden="true"><div class="art-orbit"></div><div class="art-grid"></div><span class="art-star">✳</span><div class="speech speech-one">Hello<span>there!</span><i>✦</i></div><div class="speech speech-two">A<span>a</span></div><div class="art-label">GROW YOUR CONFIDENCE ↗</div><div class="art-book"><div></div><div></div></div><span class="art-spark">✧</span><div class="art-dot"></div></div></section><section id="spaces" class="spaces"><div class="section-heading"><div><span class="eyebrow">THREE SPACES. ENDLESS POSSIBILITIES.</span><h2>Where will you begin?</h2></div><p>Different stages. One shared love of learning.</p></div><div class="space-grid">${bank.sections.map((s,i)=>`<a class="space-card ${s.id}" href="${href(s.id)}"><div class="card-top"><span class="space-icon">${icons[s.id]}</span><span class="card-number">0${i+1}</span></div><span class="eyebrow">${esc(s.tagline)}</span><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p><div class="card-bottom"><span>${s.levels.length} levels to explore</span><span class="round-arrow">↗</span></div></a>`).join('')}</div></section><section class="path-strip"><div class="strip-icon">◎</div><div><h3>Your journey, one step at a time.</h3><p>Choose a level. Explore a lesson. Put your English into practice.</p></div><div class="path-steps"><span>Explore</span><i>→</i><span>Practice</span><i>→</i><span>Grow</span></div></section><div class="content-note"><span>◷</span><p>Good things are taking shape. Lessons and challenges will appear as your teachers add your course content.</p></div>`;}
+function render(){run=null;const parts=location.hash.slice(2).split('/').filter(Boolean).map(x=>{try{return decodeURIComponent(x);}catch{return '';}});document.body.dataset.space=parts[0]||'home';if(!parts.length){home();return;}if(parts[0]==='progress'){const rows=Object.entries(progress);main.innerHTML=crumbs([['My progress']])+intro('YOUR LEARNING JOURNEY','Every step counts.','Your completed quizzes are saved on this browser and device.')+(rows.length?`<div class="level-grid">${rows.map(([id,p])=>`<div class="level-card"><h3>${esc(p.title)}</h3><p>Best score: ${p.best}% · ${p.attempts} attempt(s)</p><progress value="${p.best}" max="100"></progress>${link(p.route,'Practice again →')}</div>`).join('')}</div><button id="clear-progress" class="secondary">Clear my progress</button>`:empty('Your journey is ready','Completed quizzes and your best scores will appear here.'));$('#clear-progress')?.addEventListener('click',()=>{if(confirm('Clear all ALC progress saved in this browser?')){progress={};save('progress',progress);render();}});return;}
+const s=bank.sections.find(x=>x.id===parts[0]);if(!s){missing();return;}const c=[[s.title,href(s.id)]];if(parts.length===1){main.innerHTML=crumbs([[s.title]])+intro('YOUR LEARNING SPACE',s.title,s.tagline)+`<div class="level-groups">${[...new Set(s.levels.map(l=>l.group||''))].map(g=>`<section>${g?`<h2>${esc(g)}</h2>`:''}<div class="level-grid">${s.levels.filter(l=>(l.group||'')===g).map(l=>`<a class="level-card" href="${href(s.id,l.id)}"><span class="eyebrow">${l.units.length?`${l.units.length} units`:'Ready for your curriculum'}</span><h3>${esc(l.title)} <span>↗</span></h3><p>${l.units.length?'Explore your units':'Units will appear here when added.'}</p></a>`).join('')}</div></section>`).join('')}</div>`;return;}
+const l=s.levels.find(x=>x.id===parts[1]);if(!l){missing();return;}c.push([l.title,href(s.id,l.id)]);if(parts.length===2){main.innerHTML=crumbs(c.map((x,i)=>i===1?[x[0]]:x))+intro(s.title,l.title,'Your course, organized into manageable steps.')+(l.units.length?`<div class="level-grid">${l.units.map(u=>`<a class="level-card" href="${href(s.id,l.id,u.id)}"><span class="eyebrow">${u.lessons.length} lessons</span><h3>${esc(u.title)} ↗</h3></a>`).join('')}</div>`:empty('A fresh start awaits','Your teacher will add units based on your textbook and learning objectives.'))+`<h2 class="practice-title">A place for every kind of practice</h2><div class="practice-grid">${Object.values(categories).map((t,i)=>`<div><span>0${i+1}</span><h3>${t}</h3><small>Available when content is added</small></div>`).join('')}</div>`;return;}
+const u=l.units.find(x=>x.id===parts[2]);if(!u){missing();return;}c.push([u.title,href(s.id,l.id,u.id)]);if(parts.length===3){main.innerHTML=crumbs(c.map((x,i)=>i===2?[x[0]]:x))+intro(l.title,u.title,'Choose a lesson to explore its practice activities.')+(u.lessons.length?`<div class="level-grid">${u.lessons.map(v=>link(href(s.id,l.id,u.id,v.id),v.title+' →','level-card')).join('')}</div>`:empty('Lessons are on their way','Your teacher has not added lessons to this unit yet.'));return;}
+const lesson=u.lessons.find(x=>x.id===parts[3]);if(!lesson){missing();return;}c.push([lesson.title,href(s.id,l.id,u.id,lesson.id)]);if(parts.length===4){main.innerHTML=crumbs(c.map((x,i)=>i===3?[x[0]]:x))+intro(u.title,lesson.title,'Choose the practice that works for you.')+Object.entries(categories).map(([k,t])=>`<section class="quiz-category"><h2>${t}</h2>${lesson.quizzes.filter(q=>q.category===k).map(q=>`<a class="quiz-link" href="${href(...parts,q.id)}"><span>${esc(q.title)}<small>${q.questions.length} questions${progress[q.id]?` · Best: ${progress[q.id].best}%`:''}</small></span><span>Start →</span></a>`).join('')||'<p class="muted">No activities added yet.</p>'}</section>`).join('');return;}
+const quiz=lesson.quizzes.find(x=>x.id===parts[4]);if(!quiz||parts.length!==5){missing();return;}run={quiz,index:0,answers:[],checked:false,route:location.hash,c};showQuestion();}
+function missing(){main.innerHTML=crumbs([['Page unavailable']])+empty('This page is not available','The content may have moved or been removed.')+link('#/','Return to learning spaces','primary');}
+function showQuestion(){const r=run,q=r.quiz.questions[r.index];main.innerHTML=crumbs([...r.c,[r.quiz.title]])+`<div class="quiz-panel"><span class="eyebrow">${esc(categories[r.quiz.category])}</span><h1>${esc(r.quiz.title)}</h1><div class="question-meta"><span>Question ${r.index+1} of ${r.quiz.questions.length}</span><span>${r.answers.filter(Boolean).length} correct</span></div><progress max="${r.quiz.questions.length}" value="${r.index}"></progress><form id="answer-form"><h2>${esc(q.prompt)}</h2>${q.type==='choice'?`<fieldset><legend class="sr-only">Choose one answer</legend>${q.options.map((o,i)=>`<label class="option"><input type="radio" name="answer" value="${i}" required><span>${esc(o)}</span></label>`).join('')}</fieldset>`:'<label class="text-label">Your answer<input name="answer" autocomplete="off" required maxlength="500"></label>'}<button class="primary" type="submit">Check answer</button></form><div id="feedback" role="status" aria-live="polite"></div></div>`;$('#answer-form').onsubmit=e=>{e.preventDefault();if(r.checked)return;const val=new FormData(e.target).get('answer');if(val===null||!String(val).trim())return;r.checked=true;const correct=isCorrect(q,q.type==='choice'?Number(val):val);r.answers.push(correct);e.target.querySelectorAll('input,button').forEach(x=>x.disabled=true);$('#feedback').innerHTML=`<div class="feedback ${correct?'correct':'incorrect'}"><h3>${correct?'Well done!':'Keep learning.'}</h3><p>${esc(q.explanation)}</p>${correct?'':`<p>Accepted answer: ${esc(q.type==='choice'?q.options[q.answer]:q.answers.join(' / '))}</p>`}</div><button id="next" class="primary">${r.index+1===r.quiz.questions.length?'See my results':'Next question →'}</button>`;$('#next').onclick=()=>{r.index++;r.checked=false;if(r.index<r.quiz.questions.length)showQuestion();else finish();};};}
+function finish(){const r=run,result=score(r.answers),old=progress[r.quiz.id];progress[r.quiz.id]={title:r.quiz.title,best:Math.max(old?.best||0,result),last:result,attempts:(old?.attempts||0)+1,route:r.route};save('progress',progress);main.innerHTML=crumbs([...r.c,[r.quiz.title]])+`<div class="results"><span class="eyebrow">PRACTICE COMPLETE</span><div class="result-score">${result}<small>%</small></div><h1>Another step forward.</h1><p>${r.answers.filter(Boolean).length} of ${r.answers.length} correct · Best score: ${progress[r.quiz.id].best}%</p><button class="primary" id="replay">Try again ↻</button> ${link(r.c.at(-1)[1],'Back to lesson','secondary')}<h2>Review your answers</h2>${r.quiz.questions.map((q,i)=>`<div class="answer-review"><strong>${r.answers[i]?'✓':'○'} ${esc(q.prompt)}</strong><p>${esc(q.explanation)}</p></div>`).join('')}</div>`;$('#replay').onclick=render;}
+function teacher(){const el=$('#teacher');el.hidden=!el.hidden;if(el.hidden)return;el.innerHTML=`<div class="teacher-head"><div><span class="eyebrow">TEACHER WORKSPACE</span><h2>Shape the next lesson.</h2></div><button id="close-editor" class="secondary">Close ✕</button></div><p>Edits are drafts on this browser. Use Export website to download an updated index.html, then upload it to your separate GitHub repository to publish for students. JSON exports are backups you can import here. This toolbar is a local authoring tool, not a protected teacher account.</p><div class="editor-actions"><button id="apply" class="primary">Save browser draft</button><button id="export-site" class="secondary">Export website</button><button id="export" class="secondary">Export JSON backup</button><label class="secondary import-label">Import JSON<input type="file" id="import" accept=".json,application/json"></label><button id="restore" class="secondary">Restore published content</button></div><details class="builder" open><summary>Add a unit or lesson</summary><div class="builder-fields"><label>Level<select id="edit-level">${bank.sections.flatMap(s=>s.levels.map(l=>`<option value="${l.id}">${esc(l.title)}</option>`)).join('')}</select></label><label>Unit<select id="edit-unit"></select></label><label>Title<input id="item-title" placeholder="Enter your curriculum title"></label><button id="add-unit" class="secondary">Add unit</button><button id="add-lesson" class="secondary">Add lesson</button></div></details><details class="builder"><summary>Quiz authoring guide</summary><p>Edit quizzes inside a lesson’s <code>quizzes</code> array. Categories: vocabulary, grammar, review, challenge, remedial. Each quiz has id, title, category, questions. Each question has id, title, prompt, explanation, and type. For choice, add options and a zero-based answer index. For text, add an answers array. IDs must be globally unique. Remove an item by deleting its object. All changes are validated before saving or export.</p></details><label class="text-label" for="content-editor">Content bank · JSON editor</label><textarea id="content-editor" spellcheck="false" rows="20"></textarea><p id="editor-status" role="status" aria-live="polite"></p>`;const editor=$('#content-editor');editor.value=JSON.stringify(bank,null,2);const status=(msg,error=false)=>{$('#editor-status').textContent=msg;$('#editor-status').className=error?'error':'success';};const get=()=>validate(JSON.parse(editor.value));const units=()=>{try{const b=get(),l=b.sections.flatMap(s=>s.levels).find(x=>x.id===$('#edit-level').value);$('#edit-unit').innerHTML=l.units.map(u=>`<option value="${u.id}">${esc(u.title)}</option>`).join('')||'<option value="">Add a unit first</option>';}catch(e){status(e.message,true);}};units();$('#edit-level').onchange=units;$('#close-editor').onclick=()=>el.hidden=true;$('#apply').onclick=()=>{try{const b=get();if(save('draft',b)){bank=b;render();units();status('Browser draft saved. Export to publish for everyone.');}}catch(e){status(e.message,true);}};$('#export').onclick=()=>{try{const b=get(),url=URL.createObjectURL(new Blob([JSON.stringify(b,null,2)+'\n'],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='content.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status('Exported validated content. Replace data/content.json to publish.');}catch(e){status(e.message,true);}};$('#export-site').onclick=()=>{try{const b=get();const doc=document.documentElement.cloneNode(true);doc.querySelector('#published-bank').textContent=JSON.stringify(b,null,2).replace(/</g,'\\u003c');doc.querySelector('#teacher').innerHTML='';doc.querySelector('#teacher').hidden=true;doc.querySelector('#main').innerHTML='';const url=URL.createObjectURL(new Blob(['<!doctype html>\n'+doc.outerHTML],{type:'text/html'}));const a=document.createElement('a');a.href=url;a.download='index.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status('Website exported. Upload index.html to your ALC repository to publish.');}catch(e){status(e.message,true);}};$('#import').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>5000000)throw Error('Choose a file smaller than 5 MB.');const b=validate(JSON.parse(await file.text()));editor.value=JSON.stringify(b,null,2);units();status('Imported into editor. Save browser draft to preview.');}catch(e){status(e.message,true);}};$('#restore').onclick=()=>{if(confirm('Discard your browser draft and return to published content? Export first to keep your changes.')){bank=structuredClone(published);try{localStorage.removeItem(key+'draft');}catch{}editor.value=JSON.stringify(bank,null,2);render();units();status('Published content restored.');}};for(const type of ['unit','lesson'])$('#add-'+type).onclick=()=>{try{const b=get(),l=b.sections.flatMap(s=>s.levels).find(x=>x.id===$('#edit-level').value),title=$('#item-title').value.trim();if(!title)throw Error('Enter a title first.');const id=type+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,6);if(type==='unit')l.units.push({id,title,lessons:[]});else{const u=l.units.find(x=>x.id===$('#edit-unit').value);if(!u)throw Error('Add or select a unit first.');u.lessons.push({id,title,quizzes:[]});}validate(b);editor.value=JSON.stringify(b,null,2);units();$('#item-title').value='';status('Added to editor. Save browser draft to preview.');}catch(e){status(e.message,true);}};}
+$('#teacher-toggle').onclick=teacher;window.addEventListener('hashchange',()=>{render();main.focus();window.scrollTo(0,0);});
+try{published=validate(JSON.parse(document.getElementById("published-bank").textContent));bank=structuredClone(published);const draft=read('draft',null);if(draft){try{bank=validate(draft);}catch{}}render();}catch(e){main.innerHTML=empty('Unable to load your learning spaces','Please refresh or ask your teacher to check the content file.');console.error(e);}
+</script></body></html>
